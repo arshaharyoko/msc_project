@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24008094.svg)](https://doi.org/10.5281/zenodo.24008094)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24009092.svg)](https://doi.org/10.5281/zenodo.24009092)
+
 # Growth medium optimization in the MVRRAE_GV latent space
 
 This repository holds the code, data and analysis behind a constrained optimization of xeno-free growth-medium recipes for mesenchymal stem cells. A rank-reducing variational autoencoder (MVRRAE_GV) encodes each recipe as a set of per-component latent codes, regularized by a signalling-pathway R-GCN whose readout nodes are proliferation, survival and differentiation. The negatives are graded: each recipe carries three targets (p, s, d) read from `data/negatives_spec.yaml` instead of one binary label. `CostModel` (`src/cost_model.py`) prices a recipe in USD/L from `data/price_table.csv`, and a cost head on the latent is trained against that price. `predict.py` minimizes the priced cost of the decoded recipe with an augmented Lagrangian. Readout, realism, osmolarity, ion, nutrient, protein-dose and vocabulary constraints are judged on the decoded, named and re-encoded recipe. The cost weight trades realism against cost.
