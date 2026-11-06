@@ -1,5 +1,5 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24008094.svg)](https://doi.org/10.5281/zenodo.24008094)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24009092.svg)](https://doi.org/10.5281/zenodo.24009092)
+[![Dataset DOI](https://img.shields.io/badge/Dataset-10.5281%2Fzenodo.24008094-blue)](https://doi.org/10.5281/zenodo.24008094)
+[![Ablation Checkpoints DOI](https://img.shields.io/badge/Paper-10.5281%2Fzenodo.24009092-blue)](https://doi.org/10.5281/zenodo.24009092)
 
 # Growth medium optimization in the MVRRAE_GV latent space
 
